@@ -7,7 +7,7 @@ const Post = (props) => {
       <img src="https://whatsism.com/uploads/posts/2018-07/1530546590_tx962vdsiqi.jpg" />
       {props.message}
       <div>
-        <span>like {props.coins}</span>
+        <span>like {props.likesCount}</span>
       </div>
     </div>
   )
