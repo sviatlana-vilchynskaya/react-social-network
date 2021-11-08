@@ -1,7 +1,7 @@
 .dialogs {
   display: grid;
   grid-template-columns: 2fr 10fr;
-  padding-top: 10px;
+  background: rgba(253, 253, 253, 0.692);
 }
 
 .dialogsItems {

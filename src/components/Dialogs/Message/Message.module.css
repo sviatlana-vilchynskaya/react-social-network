@@ -1,0 +1,86 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+  padding: 10px;
+}
+
+.dialogsItems .active {
+  color: gold;
+}
+
+.dialog {
+  padding-left: 10px;
+}
+
+.messages {
+  padding: 10px;
+}
+
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+  padding: 10px;
+}
+
+.dialogsItems .active {
+  color: gold;
+}
+
+.dialog {
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  background-color: rgba(116, 172, 224, 0.877);
+  padding-top: 10px;
+}
+
+.dialog:hover {
+  background-color: rgba(164, 202, 236, 0.61);
+  border-right: 4px solid rgba(253, 253, 253, 0.692);
+}
+
+.dialog:hover a {
+  color: gold;
+}
+
+.messages {
+  padding: 10px;
+}
+
+.messageBlock {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  background: rgba(253, 253, 253, 0.692);
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 10px;
+}
+.userName {
+  margin: auto 0;
+}
+.userName a {
+  text-decoration: none;
+  color: rgb(102, 93, 224);
+}
+
+.userBlock {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.message {
+  margin: auto 0;
+  padding: 20px;
+}

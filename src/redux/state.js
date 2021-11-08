@@ -16,10 +16,10 @@ let state = {
       { id: 6, name: 'diana' },
     ],
     messages: [
-      { id: 1, message: 'Hi' },
-      { id: 2, message: 'How are you' },
-      { id: 3, message: 'OK' },
-      { id: 4, message: 'Hello' },
+      { id: 1, message: 'Hi', name: 'Sveta' },
+      { id: 2, message: 'How are you', name: 'Aleksandr' },
+      { id: 3, message: 'OK', name: 'Sveta' },
+      { id: 4, message: 'Hello', name: 'Diana' },
     ],
   },
 }
