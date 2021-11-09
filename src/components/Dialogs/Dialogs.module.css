@@ -1,6 +1,7 @@
-.dialogs {
+.dialogsBlock {
   display: grid;
   grid-template-columns: 2fr 10fr;
+  grid-template-rows: 11fr 1fr;
   background: rgba(253, 253, 253, 0.692);
 }
 
@@ -12,13 +13,6 @@
   color: gold;
 }
 
-.dialog {
-  padding-left: 10px;
-}
-
 .messages {
   padding: 10px;
-}
-
-.message {
 }

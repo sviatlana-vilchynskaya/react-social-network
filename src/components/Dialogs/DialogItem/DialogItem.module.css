@@ -1,17 +1,4 @@
-.dialogs {
-  display: grid;
-  grid-template-columns: 2fr 10fr;
-}
-
-.dialogsItems {
-  padding: 10px;
-}
-
-.dialogsItems .active {
-  color: gold;
-}
-
-.dialog {
+.dialogList {
   padding-left: 10px;
   display: grid;
   grid-template-columns: 2fr 10fr;
@@ -19,20 +6,13 @@
   padding-top: 10px;
 }
 
-.dialog:hover {
+.dialogList:hover {
   background-color: rgba(164, 202, 236, 0.61);
   border-right: 4px solid rgba(253, 253, 253, 0.692);
 }
 
-.dialog:hover a {
+.dialogList:hover a {
   color: gold;
-}
-
-.messages {
-  padding: 10px;
-}
-
-.message {
 }
 
 .avatar img {
@@ -40,6 +20,7 @@
   width: 50px;
   margin-right: 10px;
 }
+
 .userName {
   margin: auto 0;
 }
