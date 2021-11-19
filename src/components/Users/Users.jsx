@@ -4,9 +4,7 @@ import * as axios from 'axios'
 import userPhoto from '../../assets/images/user.png'
 
 class Users extends React.Component {
-  constructor(props) {
-    super(props)
-
+  componentDidMount() {
     axios
       .get('https://social-network.samuraijs.com/api/1.0/users')
       .then((response) => {
@@ -50,9 +48,6 @@ class Users extends React.Component {
               <span>
                 <div>{u.name}</div>
                 <div>{u.status}</div>
-              </span>
-              <span>
-                <div>{'u.location.country'}</div>
                 <div>{'u.location.city'}</div>
               </span>
             </span>
@@ -62,5 +57,4 @@ class Users extends React.Component {
     )
   }
 }
-
 export default Users
