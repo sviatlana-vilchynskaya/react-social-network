@@ -3,6 +3,7 @@ import { addPostActionCreator } from '../../../redux/profile-reducer'
 import { updateNewPostTextActionCreator } from '../../../redux/profile-reducer'
 import MyPosts from './MyPosts'
 import { connect } from 'react-redux'
+import { compose } from 'redux'
 
 let mapStateToProps = (state) => {
   return {
@@ -23,6 +24,4 @@ let mapDispatchToProps = (dispatch) => {
   }
 }
 
-const MyPostsContainer = connect(mapStateToProps, mapDispatchToProps)(MyPosts)
-
-export default MyPostsContainer
+export default compose(connect(mapStateToProps, mapDispatchToProps))(MyPosts)
