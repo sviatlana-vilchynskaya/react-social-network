@@ -5,7 +5,6 @@ import {
   updateNewMessageBodyCreator,
 } from '../../redux/dialogs-reduser'
 import { connect } from 'react-redux'
-import { Redirect } from 'react-router-dom'
 import { withAuthRedirect } from '../../hoc/withAuthRedirect'
 import { compose } from 'redux'
 
