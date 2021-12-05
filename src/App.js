@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import './App.css'
 import HeaderContainer from './components/Header/HeaderContainer'
 import Navbar from './components/Navbar/Navbar'
-import { Route, withRouter } from 'react-router-dom'
+import { HashRouter, Route, withRouter } from 'react-router-dom'
 import UsersContainer from './components/Users/UsersContainer'
 import LoginPage from './components/Login/Login'
-import { connect } from 'react-redux'
+import { connect, Provider } from 'react-redux'
 import { compose } from 'redux'
+import store from './redux/redux-store'
 import { initializeApp } from './redux/app-reducer'
 import Preloader from './components/common/Preloader/Preloader'
 import { withSuspense } from './hoc/withSuspense'
@@ -50,7 +51,19 @@ const mapStateToProps = (state) => ({
   initialized: state.app.initialized,
 })
 
-export default compose(
+let AppContainer = compose(
   withRouter,
   connect(mapStateToProps, { initializeApp })
 )(App)
+
+const SamuraiJSApp = (props) => {
+  return (
+    <HashRouter>
+      <Provider store={store}>
+        <AppContainer />
+      </Provider>
+    </HashRouter>
+  )
+}
+
+export default SamuraiJSApp
