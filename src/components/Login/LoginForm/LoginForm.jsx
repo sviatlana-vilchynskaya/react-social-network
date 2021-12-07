@@ -1,8 +1,8 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import { required } from '../../../utils/validators/validators'
-import { Input } from '../../common/FormControls/FormsControls'
-import style from './../../common/FormControls/FormsControls.module.css'
+import { Input } from '../../common/FormsControls/FormsControls'
+import style from './../../common/FormsControls/FormsControls.module.css'
 
 const LoginForm = (props) => {
   return (
